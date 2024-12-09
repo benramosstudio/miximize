@@ -1,0 +1,795 @@
+{
+  "InputCollect": {
+    "date_var": ["DATE"],
+    "dayInterval": [1],
+    "intervalType": ["day"],
+    "dep_var": ["conversions"],
+    "dep_var_type": ["conversion"],
+    "prophet_vars": ["trend", "season", "holiday"],
+    "prophet_signs": ["default", "default", "default"],
+    "prophet_country": ["US"],
+    "paid_media_vars": ["facebook_i", "googlesearch_i"],
+    "paid_media_signs": ["positive", "positive"],
+    "paid_media_spends": ["facebook_s", "googlesearch_s"],
+    "paid_media_total": [165550],
+    "exposure_vars": ["facebook_i", "googlesearch_i"],
+    "all_media": ["facebook_s", "googlesearch_s"],
+    "all_ind_vars": ["trend", "season", "holiday", "facebook_s", "googlesearch_s"],
+    "unused_vars": [],
+    "window_start": ["2024-01-01"],
+    "rollingWindowStartWhich": [1],
+    "window_end": ["2024-02-29"],
+    "rollingWindowEndWhich": [60],
+    "rollingWindowLength": [60],
+    "totalObservations": [91],
+    "refreshAddedStart": ["2024-01-01"],
+    "adstock": ["geometric"],
+    "hyperparameters": {
+      "facebook_s_alphas": [0.5, 3],
+      "facebook_s_gammas": [0.3, 1],
+      "facebook_s_thetas": [0, 0.3],
+      "googlesearch_s_alphas": [0.5, 3],
+      "googlesearch_s_gammas": [0.3, 1],
+      "googlesearch_s_thetas": [0, 0.3],
+      "train_size": [0.5, 0.8]
+    },
+    "calibration_input": {},
+    "custom_params": [],
+    "version": ["Robyn (dev) v3.11.1.9004 [R-4.4.2]"]
+  },
+  "ModelsCollect": {
+    "ts_validation": [true],
+    "train_timestamp": ["2024-12-09 01:48:33"],
+    "export_timestamp": ["2024-12-09 01:51:10"],
+    "run_time": ["6.6 min"],
+    "outputs_time": ["2.61 min"],
+    "total_time": ["9.21 min"],
+    "total_iters": [1000],
+    "conv_msg": ["DECOMP.RSSD NOT converged", "NRMSE converged"],
+    "n_clusters": [10],
+    "calibration_constraint": [0.1],
+    "cores": [1],
+    "iterations": [1000],
+    "trials": [1],
+    "intercept": [true],
+    "intercept_sign": ["non_negative"],
+    "nevergrad_algo": ["TwoPointsDE"],
+    "add_penalty_factor": [false],
+    "seed": [123],
+    "pareto_fronts": [9],
+    "hyper_fixed": [false],
+    "plot_folder": ["/var/www/miximize/server/tmp/output/Robyn_202412090149_init/"]
+  },
+  "Extras": {
+    "raw_data": [
+      {
+        "DATE": "2024-01-01",
+        "conversions": 120,
+        "facebook_s": 1500,
+        "googlesearch_s": 800,
+        "facebook_i": 7500,
+        "googlesearch_i": 3200
+      },
+      {
+        "DATE": "2024-01-02",
+        "conversions": 115,
+        "facebook_s": 1450,
+        "googlesearch_s": 850,
+        "facebook_i": 7200,
+        "googlesearch_i": 3400
+      },
+      {
+        "DATE": "2024-01-03",
+        "conversions": 125,
+        "facebook_s": 1600,
+        "googlesearch_s": 750,
+        "facebook_i": 8000,
+        "googlesearch_i": 3000
+      },
+      {
+        "DATE": "2024-01-04",
+        "conversions": 135,
+        "facebook_s": 1700,
+        "googlesearch_s": 900,
+        "facebook_i": 8500,
+        "googlesearch_i": 3600
+      },
+      {
+        "DATE": "2024-01-05",
+        "conversions": 140,
+        "facebook_s": 1800,
+        "googlesearch_s": 850,
+        "facebook_i": 9000,
+        "googlesearch_i": 3400
+      },
+      {
+        "DATE": "2024-01-06",
+        "conversions": 110,
+        "facebook_s": 1400,
+        "googlesearch_s": 800,
+        "facebook_i": 7000,
+        "googlesearch_i": 3200
+      },
+      {
+        "DATE": "2024-01-07",
+        "conversions": 105,
+        "facebook_s": 1300,
+        "googlesearch_s": 750,
+        "facebook_i": 6500,
+        "googlesearch_i": 3000
+      },
+      {
+        "DATE": "2024-01-08",
+        "conversions": 130,
+        "facebook_s": 1600,
+        "googlesearch_s": 900,
+        "facebook_i": 8000,
+        "googlesearch_i": 3600
+      },
+      {
+        "DATE": "2024-01-09",
+        "conversions": 125,
+        "facebook_s": 1550,
+        "googlesearch_s": 850,
+        "facebook_i": 7750,
+        "googlesearch_i": 3400
+      },
+      {
+        "DATE": "2024-01-10",
+        "conversions": 135,
+        "facebook_s": 1650,
+        "googlesearch_s": 900,
+        "facebook_i": 8250,
+        "googlesearch_i": 3600
+      },
+      {
+        "DATE": "2024-01-11",
+        "conversions": 145,
+        "facebook_s": 1750,
+        "googlesearch_s": 950,
+        "facebook_i": 8750,
+        "googlesearch_i": 3800
+      },
+      {
+        "DATE": "2024-01-12",
+        "conversions": 150,
+        "facebook_s": 1850,
+        "googlesearch_s": 900,
+        "facebook_i": 9250,
+        "googlesearch_i": 3600
+      },
+      {
+        "DATE": "2024-01-13",
+        "conversions": 120,
+        "facebook_s": 1450,
+        "googlesearch_s": 850,
+        "facebook_i": 7250,
+        "googlesearch_i": 3400
+      },
+      {
+        "DATE": "2024-01-14",
+        "conversions": 115,
+        "facebook_s": 1350,
+        "googlesearch_s": 800,
+        "facebook_i": 6750,
+        "googlesearch_i": 3200
+      },
+      {
+        "DATE": "2024-01-15",
+        "conversions": 140,
+        "facebook_s": 1650,
+        "googlesearch_s": 950,
+        "facebook_i": 8250,
+        "googlesearch_i": 3800
+      },
+      {
+        "DATE": "2024-01-16",
+        "conversions": 135,
+        "facebook_s": 1600,
+        "googlesearch_s": 900,
+        "facebook_i": 8000,
+        "googlesearch_i": 3600
+      },
+      {
+        "DATE": "2024-01-17",
+        "conversions": 145,
+        "facebook_s": 1700,
+        "googlesearch_s": 950,
+        "facebook_i": 8500,
+        "googlesearch_i": 3800
+      },
+      {
+        "DATE": "2024-01-18",
+        "conversions": 155,
+        "facebook_s": 1800,
+        "googlesearch_s": 1000,
+        "facebook_i": 9000,
+        "googlesearch_i": 4000
+      },
+      {
+        "DATE": "2024-01-19",
+        "conversions": 160,
+        "facebook_s": 1900,
+        "googlesearch_s": 950,
+        "facebook_i": 9500,
+        "googlesearch_i": 3800
+      },
+      {
+        "DATE": "2024-01-20",
+        "conversions": 130,
+        "facebook_s": 1500,
+        "googlesearch_s": 900,
+        "facebook_i": 7500,
+        "googlesearch_i": 3600
+      },
+      {
+        "DATE": "2024-01-21",
+        "conversions": 125,
+        "facebook_s": 1400,
+        "googlesearch_s": 850,
+        "facebook_i": 7000,
+        "googlesearch_i": 3400
+      },
+      {
+        "DATE": "2024-01-22",
+        "conversions": 150,
+        "facebook_s": 1700,
+        "googlesearch_s": 1000,
+        "facebook_i": 8500,
+        "googlesearch_i": 4000
+      },
+      {
+        "DATE": "2024-01-23",
+        "conversions": 145,
+        "facebook_s": 1650,
+        "googlesearch_s": 950,
+        "facebook_i": 8250,
+        "googlesearch_i": 3800
+      },
+      {
+        "DATE": "2024-01-24",
+        "conversions": 155,
+        "facebook_s": 1750,
+        "googlesearch_s": 1000,
+        "facebook_i": 8750,
+        "googlesearch_i": 4000
+      },
+      {
+        "DATE": "2024-01-25",
+        "conversions": 165,
+        "facebook_s": 1850,
+        "googlesearch_s": 1050,
+        "facebook_i": 9250,
+        "googlesearch_i": 4200
+      },
+      {
+        "DATE": "2024-01-26",
+        "conversions": 170,
+        "facebook_s": 1950,
+        "googlesearch_s": 1000,
+        "facebook_i": 9750,
+        "googlesearch_i": 4000
+      },
+      {
+        "DATE": "2024-01-27",
+        "conversions": 140,
+        "facebook_s": 1550,
+        "googlesearch_s": 950,
+        "facebook_i": 7750,
+        "googlesearch_i": 3800
+      },
+      {
+        "DATE": "2024-01-28",
+        "conversions": 135,
+        "facebook_s": 1450,
+        "googlesearch_s": 900,
+        "facebook_i": 7250,
+        "googlesearch_i": 3600
+      },
+      {
+        "DATE": "2024-01-29",
+        "conversions": 160,
+        "facebook_s": 1750,
+        "googlesearch_s": 1050,
+        "facebook_i": 8750,
+        "googlesearch_i": 4200
+      },
+      {
+        "DATE": "2024-01-30",
+        "conversions": 155,
+        "facebook_s": 1700,
+        "googlesearch_s": 1000,
+        "facebook_i": 8500,
+        "googlesearch_i": 4000
+      },
+      {
+        "DATE": "2024-01-31",
+        "conversions": 165,
+        "facebook_s": 1800,
+        "googlesearch_s": 1050,
+        "facebook_i": 9000,
+        "googlesearch_i": 4200
+      },
+      {
+        "DATE": "2024-02-01",
+        "conversions": 175,
+        "facebook_s": 1900,
+        "googlesearch_s": 1100,
+        "facebook_i": 9500,
+        "googlesearch_i": 4400
+      },
+      {
+        "DATE": "2024-02-02",
+        "conversions": 180,
+        "facebook_s": 2000,
+        "googlesearch_s": 1050,
+        "facebook_i": 10000,
+        "googlesearch_i": 4200
+      },
+      {
+        "DATE": "2024-02-03",
+        "conversions": 150,
+        "facebook_s": 1600,
+        "googlesearch_s": 1000,
+        "facebook_i": 8000,
+        "googlesearch_i": 4000
+      },
+      {
+        "DATE": "2024-02-04",
+        "conversions": 145,
+        "facebook_s": 1500,
+        "googlesearch_s": 950,
+        "facebook_i": 7500,
+        "googlesearch_i": 3800
+      },
+      {
+        "DATE": "2024-02-05",
+        "conversions": 170,
+        "facebook_s": 1800,
+        "googlesearch_s": 1100,
+        "facebook_i": 9000,
+        "googlesearch_i": 4400
+      },
+      {
+        "DATE": "2024-02-06",
+        "conversions": 165,
+        "facebook_s": 1750,
+        "googlesearch_s": 1050,
+        "facebook_i": 8750,
+        "googlesearch_i": 4200
+      },
+      {
+        "DATE": "2024-02-07",
+        "conversions": 175,
+        "facebook_s": 1850,
+        "googlesearch_s": 1100,
+        "facebook_i": 9250,
+        "googlesearch_i": 4400
+      },
+      {
+        "DATE": "2024-02-08",
+        "conversions": 185,
+        "facebook_s": 1950,
+        "googlesearch_s": 1150,
+        "facebook_i": 9750,
+        "googlesearch_i": 4600
+      },
+      {
+        "DATE": "2024-02-09",
+        "conversions": 190,
+        "facebook_s": 2050,
+        "googlesearch_s": 1100,
+        "facebook_i": 10250,
+        "googlesearch_i": 4400
+      },
+      {
+        "DATE": "2024-02-10",
+        "conversions": 160,
+        "facebook_s": 1650,
+        "googlesearch_s": 1050,
+        "facebook_i": 8250,
+        "googlesearch_i": 4200
+      },
+      {
+        "DATE": "2024-02-11",
+        "conversions": 155,
+        "facebook_s": 1550,
+        "googlesearch_s": 1000,
+        "facebook_i": 7750,
+        "googlesearch_i": 4000
+      },
+      {
+        "DATE": "2024-02-12",
+        "conversions": 180,
+        "facebook_s": 1850,
+        "googlesearch_s": 1150,
+        "facebook_i": 9250,
+        "googlesearch_i": 4600
+      },
+      {
+        "DATE": "2024-02-13",
+        "conversions": 175,
+        "facebook_s": 1800,
+        "googlesearch_s": 1100,
+        "facebook_i": 9000,
+        "googlesearch_i": 4400
+      },
+      {
+        "DATE": "2024-02-14",
+        "conversions": 185,
+        "facebook_s": 1900,
+        "googlesearch_s": 1150,
+        "facebook_i": 9500,
+        "googlesearch_i": 4600
+      },
+      {
+        "DATE": "2024-02-15",
+        "conversions": 195,
+        "facebook_s": 2000,
+        "googlesearch_s": 1200,
+        "facebook_i": 10000,
+        "googlesearch_i": 4800
+      },
+      {
+        "DATE": "2024-02-16",
+        "conversions": 200,
+        "facebook_s": 2100,
+        "googlesearch_s": 1150,
+        "facebook_i": 10500,
+        "googlesearch_i": 4600
+      },
+      {
+        "DATE": "2024-02-17",
+        "conversions": 170,
+        "facebook_s": 1700,
+        "googlesearch_s": 1100,
+        "facebook_i": 8500,
+        "googlesearch_i": 4400
+      },
+      {
+        "DATE": "2024-02-18",
+        "conversions": 165,
+        "facebook_s": 1600,
+        "googlesearch_s": 1050,
+        "facebook_i": 8000,
+        "googlesearch_i": 4200
+      },
+      {
+        "DATE": "2024-02-19",
+        "conversions": 190,
+        "facebook_s": 1900,
+        "googlesearch_s": 1200,
+        "facebook_i": 9500,
+        "googlesearch_i": 4800
+      },
+      {
+        "DATE": "2024-02-20",
+        "conversions": 185,
+        "facebook_s": 1850,
+        "googlesearch_s": 1150,
+        "facebook_i": 9250,
+        "googlesearch_i": 4600
+      },
+      {
+        "DATE": "2024-02-21",
+        "conversions": 195,
+        "facebook_s": 1950,
+        "googlesearch_s": 1200,
+        "facebook_i": 9750,
+        "googlesearch_i": 4800
+      },
+      {
+        "DATE": "2024-02-22",
+        "conversions": 205,
+        "facebook_s": 2050,
+        "googlesearch_s": 1250,
+        "facebook_i": 10250,
+        "googlesearch_i": 5000
+      },
+      {
+        "DATE": "2024-02-23",
+        "conversions": 210,
+        "facebook_s": 2150,
+        "googlesearch_s": 1200,
+        "facebook_i": 10750,
+        "googlesearch_i": 4800
+      },
+      {
+        "DATE": "2024-02-24",
+        "conversions": 180,
+        "facebook_s": 1750,
+        "googlesearch_s": 1150,
+        "facebook_i": 8750,
+        "googlesearch_i": 4600
+      },
+      {
+        "DATE": "2024-02-25",
+        "conversions": 175,
+        "facebook_s": 1650,
+        "googlesearch_s": 1100,
+        "facebook_i": 8250,
+        "googlesearch_i": 4400
+      },
+      {
+        "DATE": "2024-02-26",
+        "conversions": 200,
+        "facebook_s": 1950,
+        "googlesearch_s": 1250,
+        "facebook_i": 9750,
+        "googlesearch_i": 5000
+      },
+      {
+        "DATE": "2024-02-27",
+        "conversions": 195,
+        "facebook_s": 1900,
+        "googlesearch_s": 1200,
+        "facebook_i": 9500,
+        "googlesearch_i": 4800
+      },
+      {
+        "DATE": "2024-02-28",
+        "conversions": 205,
+        "facebook_s": 2000,
+        "googlesearch_s": 1250,
+        "facebook_i": 10000,
+        "googlesearch_i": 5000
+      },
+      {
+        "DATE": "2024-02-29",
+        "conversions": 215,
+        "facebook_s": 2100,
+        "googlesearch_s": 1300,
+        "facebook_i": 10500,
+        "googlesearch_i": 5200
+      },
+      {
+        "DATE": "2024-03-01",
+        "conversions": 220,
+        "facebook_s": 2200,
+        "googlesearch_s": 1250,
+        "facebook_i": 11000,
+        "googlesearch_i": 5000
+      },
+      {
+        "DATE": "2024-03-02",
+        "conversions": 190,
+        "facebook_s": 1800,
+        "googlesearch_s": 1200,
+        "facebook_i": 9000,
+        "googlesearch_i": 4800
+      },
+      {
+        "DATE": "2024-03-03",
+        "conversions": 185,
+        "facebook_s": 1700,
+        "googlesearch_s": 1150,
+        "facebook_i": 8500,
+        "googlesearch_i": 4600
+      },
+      {
+        "DATE": "2024-03-04",
+        "conversions": 210,
+        "facebook_s": 2000,
+        "googlesearch_s": 1300,
+        "facebook_i": 10000,
+        "googlesearch_i": 5200
+      },
+      {
+        "DATE": "2024-03-05",
+        "conversions": 205,
+        "facebook_s": 1950,
+        "googlesearch_s": 1250,
+        "facebook_i": 9750,
+        "googlesearch_i": 5000
+      },
+      {
+        "DATE": "2024-03-06",
+        "conversions": 215,
+        "facebook_s": 2050,
+        "googlesearch_s": 1300,
+        "facebook_i": 10250,
+        "googlesearch_i": 5200
+      },
+      {
+        "DATE": "2024-03-07",
+        "conversions": 225,
+        "facebook_s": 2150,
+        "googlesearch_s": 1350,
+        "facebook_i": 10750,
+        "googlesearch_i": 5400
+      },
+      {
+        "DATE": "2024-03-08",
+        "conversions": 230,
+        "facebook_s": 2250,
+        "googlesearch_s": 1300,
+        "facebook_i": 11250,
+        "googlesearch_i": 5200
+      },
+      {
+        "DATE": "2024-03-09",
+        "conversions": 200,
+        "facebook_s": 1850,
+        "googlesearch_s": 1250,
+        "facebook_i": 9250,
+        "googlesearch_i": 5000
+      },
+      {
+        "DATE": "2024-03-10",
+        "conversions": 195,
+        "facebook_s": 1750,
+        "googlesearch_s": 1200,
+        "facebook_i": 8750,
+        "googlesearch_i": 4800
+      },
+      {
+        "DATE": "2024-03-11",
+        "conversions": 220,
+        "facebook_s": 2050,
+        "googlesearch_s": 1350,
+        "facebook_i": 10250,
+        "googlesearch_i": 5400
+      },
+      {
+        "DATE": "2024-03-12",
+        "conversions": 215,
+        "facebook_s": 2000,
+        "googlesearch_s": 1300,
+        "facebook_i": 10000,
+        "googlesearch_i": 5200
+      },
+      {
+        "DATE": "2024-03-13",
+        "conversions": 225,
+        "facebook_s": 2100,
+        "googlesearch_s": 1350,
+        "facebook_i": 10500,
+        "googlesearch_i": 5400
+      },
+      {
+        "DATE": "2024-03-14",
+        "conversions": 235,
+        "facebook_s": 2200,
+        "googlesearch_s": 1400,
+        "facebook_i": 11000,
+        "googlesearch_i": 5600
+      },
+      {
+        "DATE": "2024-03-15",
+        "conversions": 240,
+        "facebook_s": 2300,
+        "googlesearch_s": 1350,
+        "facebook_i": 11500,
+        "googlesearch_i": 5400
+      },
+      {
+        "DATE": "2024-03-16",
+        "conversions": 210,
+        "facebook_s": 1900,
+        "googlesearch_s": 1300,
+        "facebook_i": 9500,
+        "googlesearch_i": 5200
+      },
+      {
+        "DATE": "2024-03-17",
+        "conversions": 205,
+        "facebook_s": 1800,
+        "googlesearch_s": 1250,
+        "facebook_i": 9000,
+        "googlesearch_i": 5000
+      },
+      {
+        "DATE": "2024-03-18",
+        "conversions": 230,
+        "facebook_s": 2100,
+        "googlesearch_s": 1400,
+        "facebook_i": 10500,
+        "googlesearch_i": 5600
+      },
+      {
+        "DATE": "2024-03-19",
+        "conversions": 225,
+        "facebook_s": 2050,
+        "googlesearch_s": 1350,
+        "facebook_i": 10250,
+        "googlesearch_i": 5400
+      },
+      {
+        "DATE": "2024-03-20",
+        "conversions": 235,
+        "facebook_s": 2150,
+        "googlesearch_s": 1400,
+        "facebook_i": 10750,
+        "googlesearch_i": 5600
+      },
+      {
+        "DATE": "2024-03-21",
+        "conversions": 245,
+        "facebook_s": 2250,
+        "googlesearch_s": 1450,
+        "facebook_i": 11250,
+        "googlesearch_i": 5800
+      },
+      {
+        "DATE": "2024-03-22",
+        "conversions": 250,
+        "facebook_s": 2350,
+        "googlesearch_s": 1400,
+        "facebook_i": 11750,
+        "googlesearch_i": 5600
+      },
+      {
+        "DATE": "2024-03-23",
+        "conversions": 220,
+        "facebook_s": 1950,
+        "googlesearch_s": 1350,
+        "facebook_i": 9750,
+        "googlesearch_i": 5400
+      },
+      {
+        "DATE": "2024-03-24",
+        "conversions": 215,
+        "facebook_s": 1850,
+        "googlesearch_s": 1300,
+        "facebook_i": 9250,
+        "googlesearch_i": 5200
+      },
+      {
+        "DATE": "2024-03-25",
+        "conversions": 240,
+        "facebook_s": 2150,
+        "googlesearch_s": 1450,
+        "facebook_i": 10750,
+        "googlesearch_i": 5800
+      },
+      {
+        "DATE": "2024-03-26",
+        "conversions": 235,
+        "facebook_s": 2100,
+        "googlesearch_s": 1400,
+        "facebook_i": 10500,
+        "googlesearch_i": 5600
+      },
+      {
+        "DATE": "2024-03-27",
+        "conversions": 245,
+        "facebook_s": 2200,
+        "googlesearch_s": 1450,
+        "facebook_i": 11000,
+        "googlesearch_i": 5800
+      },
+      {
+        "DATE": "2024-03-28",
+        "conversions": 255,
+        "facebook_s": 2300,
+        "googlesearch_s": 1500,
+        "facebook_i": 11500,
+        "googlesearch_i": 6000
+      },
+      {
+        "DATE": "2024-03-29",
+        "conversions": 260,
+        "facebook_s": 2400,
+        "googlesearch_s": 1450,
+        "facebook_i": 12000,
+        "googlesearch_i": 5800
+      },
+      {
+        "DATE": "2024-03-30",
+        "conversions": 230,
+        "facebook_s": 2000,
+        "googlesearch_s": 1400,
+        "facebook_i": 10000,
+        "googlesearch_i": 5600
+      },
+      {
+        "DATE": "2024-03-31",
+        "conversions": 225,
+        "facebook_s": 1900,
+        "googlesearch_s": 1350,
+        "facebook_i": 9500,
+        "googlesearch_i": 5400
+      }
+    ]
+  }
+}
